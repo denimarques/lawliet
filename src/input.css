@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-hero {
+        background-image: url('/public/dist/image/bg-hero.svg');
+    }
+
+    .bg-patters{
+        background-image: url('/public/dist/image/Patterns.png');
+    }
+
+    .box-dialog {
+        @apply border-l-[15px] border-solid border-transparent;
+        @apply border-r-[15px] border-solid border-transparent;
+        @apply border-t-[15px] border-solid border-t-white;
+        @apply bottom-[-15px];
+        @apply content-[''];
+        @apply left-1/2 absolute -ml-[15px];
+    }
+}
